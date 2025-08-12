@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - SportShoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Fixo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shoe-prints"></i>
+                <h1>SportShoes</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html" class="active">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Nossos Produtos</h1>
+            <p>Descubra nossa coleção completa de tênis esportivos</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="corrida">Corrida</button>
+                <button class="filter-btn" data-category="basquete">Basquete</button>
+                <button class="filter-btn" data-category="casual">Casual</button>
+                <button class="filter-btn" data-category="treino">Treino</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de Produtos -->
+    <section class="products-list">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Nike Air Max 270 -->
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Nike Air Max 270">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=1" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Max 270</h3>
+                        <p class="price">R$ 599,90</p>
+                    </div>
+                </div>
+
+                <!-- Adidas Ultraboost 22 -->
+                <div class="product-card" data-category="corrida">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=300&fit=crop" alt="Adidas Ultraboost 22">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=2" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Adidas Ultraboost 22</h3>
+                        <p class="price">R$ 799,90</p>
+                    </div>
+                </div>
+
+                <!-- Puma RS-X 3 -->
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop" alt="Puma RS-X 3">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=3" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Puma RS-X 3</h3>
+                        <p class="price">R$ 449,90</p>
+                    </div>
+                </div>
+
+                <!-- New Balance 574 -->
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=400&h=300&fit=crop" alt="New Balance 574">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=4" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>New Balance 574</h3>
+                        <p class="price">R$ 399,90</p>
+                    </div>
+                </div>
+
+                <!-- Nike Air Jordan 1 -->
+                <div class="product-card" data-category="basquete">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop" alt="Nike Air Jordan 1">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=5" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Jordan 1</h3>
+                        <p class="price">R$ 899,90</p>
+                    </div>
+                </div>
+
+                <!-- Adidas NMD R1 -->
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=300&fit=crop" alt="Adidas NMD R1">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=6" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Adidas NMD R1</h3>
+                        <p class="price">R$ 549,90</p>
+                    </div>
+                </div>
+
+                <!-- Nike Zoom Fly -->
+                <div class="product-card" data-category="corrida">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Nike Zoom Fly">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=7" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Zoom Fly</h3>
+                        <p class="price">R$ 699,90</p>
+                    </div>
+                </div>
+
+                <!-- Under Armour HOVR -->
+                <div class="product-card" data-category="treino">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop" alt="Under Armour HOVR">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=8" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Under Armour HOVR</h3>
+                        <p class="price">R$ 399,90</p>
+                    </div>
+                </div>
+
+                <!-- Converse Chuck Taylor -->
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=400&h=300&fit=crop" alt="Converse Chuck Taylor">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=9" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Converse Chuck Taylor</h3>
+                        <p class="price">R$ 299,90</p>
+                    </div>
+                </div>
+
+                <!-- Nike Metcon -->
+                <div class="product-card" data-category="treino">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Nike Metcon">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=10" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Metcon</h3>
+                        <p class="price">R$ 649,90</p>
+                    </div>
+                </div>
+
+                <!-- Adidas Dame 8 -->
+                <div class="product-card" data-category="basquete">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=300&fit=crop" alt="Adidas Dame 8">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=11" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Adidas Dame 8</h3>
+                        <p class="price">R$ 749,90</p>
+                    </div>
+                </div>
+
+                <!-- Brooks Ghost -->
+                <div class="product-card" data-category="corrida">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop" alt="Brooks Ghost">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=12" class="btn-secondary">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Brooks Ghost</h3>
+                        <p class="price">R$ 549,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportShoes</h3>
+                    <p>Sua loja de confiança para tênis esportivos de qualidade.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@sportshoes.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                                            <h3>Redes Sociais</h3>
+                        <div class="social-links">
+                            <div class="social-icon"><i class="fab fa-facebook"></i></div>
+                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                            <div class="social-icon"><i class="fab fa-youtube"></i></div>
+                        </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SportShoes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filtros de categoria
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Remove active class de todos os botões
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Adiciona active class ao botão clicado
+                    this.classList.add('active');
+
+                    // Filtra os produtos
+                    productCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

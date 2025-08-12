@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Max 270 - SportShoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Fixo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shoe-prints"></i>
+                <h1>SportShoes</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detalhes do Produto -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Galeria de Imagens -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=400&fit=crop" alt="Nike Air Max 270" id="mainImage">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=150&h=100&fit=crop" alt="Vista 1" class="thumbnail active" onclick="changeImage(this, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=150&h=100&fit=crop" alt="Vista 2" class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=150&h=100&fit=crop" alt="Vista 3" class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=150&h=100&fit=crop" alt="Vista 4" class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&h=400&fit=crop')">
+                    </div>
+                </div>
+
+                <!-- Informações do Produto -->
+                <div class="product-info-details">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Início</a> > 
+                        <a href="produtos.html">Produtos</a> > 
+                        <span>Nike Air Max 270</span>
+                    </nav>
+
+                    <h1>Nike Air Max 270</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>(4.8 - 127 avaliações)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">R$ 599,90</span>
+                        <span class="original-price">R$ 699,90</span>
+                        <span class="discount">-14%</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>O Nike Air Max 270 oferece conforto excepcional com sua tecnologia Air Max visível na parte traseira. Ideal para uso diário, este tênis combina estilo e funcionalidade com um design moderno e cores vibrantes.</p>
+                    </div>
+
+                    <!-- Seleção de Tamanho -->
+                    <div class="size-selection">
+                        <h3>Tamanho</h3>
+                        <div class="size-options">
+                            <button class="size-btn">36</button>
+                            <button class="size-btn">37</button>
+                            <button class="size-btn">38</button>
+                            <button class="size-btn">39</button>
+                            <button class="size-btn active">40</button>
+                            <button class="size-btn">41</button>
+                            <button class="size-btn">42</button>
+                            <button class="size-btn">43</button>
+                            <button class="size-btn">44</button>
+                        </div>
+                    </div>
+
+                    <!-- Seleção de Cor -->
+                    <div class="color-selection">
+                        <h3>Cor</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" style="background-color: #000;"></button>
+                            <button class="color-btn" style="background-color: #fff; border: 1px solid #ddd;"></button>
+                            <button class="color-btn" style="background-color: #ff6b6b;"></button>
+                            <button class="color-btn" style="background-color: #4ecdc4;"></button>
+                        </div>
+                    </div>
+
+                    <!-- Quantidade -->
+                    <div class="quantity-selection">
+                        <h3>Quantidade</h3>
+                        <div class="quantity-controls">
+                            <button class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="qty-btn" onclick="changeQuantity(1)">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação -->
+                    <div class="product-actions">
+                        <button class="btn-primary btn-large">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                        <button class="btn-secondary btn-large">
+                            <i class="fas fa-heart"></i>
+                            Favoritar
+                        </button>
+                    </div>
+
+                    <!-- Informações Adicionais -->
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Frete grátis para todo Brasil</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>30 dias para troca</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantia de 1 ano</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especificações Técnicas -->
+    <section class="product-specs">
+        <div class="container">
+            <h2>Especificações Técnicas</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h4>Material</h4>
+                    <p>Mesh respirável com sobreposições sintéticas</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Solado</h4>
+                    <p>Borracha com padrão de tração</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Tecnologia</h4>
+                    <p>Air Max visível na parte traseira</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Peso</h4>
+                    <p>320g (tamanho 40)</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Indicado para</h4>
+                    <p>Uso diário e caminhadas</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Origem</h4>
+                    <p>Vietnã</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Relacionados -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Produtos Relacionados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=300&fit=crop" alt="Adidas Ultraboost">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=2" class="btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Adidas Ultraboost 22</h3>
+                        <p class="price">R$ 799,90</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop" alt="Puma RS-X">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=3" class="btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Puma RS-X 3</h3>
+                        <p class="price">R$ 449,90</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=400&h=300&fit=crop" alt="New Balance">
+                        <div class="product-overlay">
+                            <a href="produto.html?id=4" class="btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>New Balance 574</h3>
+                        <p class="price">R$ 399,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SportShoes</h3>
+                    <p>Sua loja de confiança para tênis esportivos de qualidade.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@sportshoes.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                                            <h3>Redes Sociais</h3>
+                        <div class="social-links">
+                            <div class="social-icon"><i class="fab fa-facebook"></i></div>
+                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                            <div class="social-icon"><i class="fab fa-youtube"></i></div>
+                        </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SportShoes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Função para trocar imagem principal
+        function changeImage(thumbnail, newSrc) {
+            document.getElementById('mainImage').src = newSrc;
+            
+            // Remove active class de todas as thumbnails
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            
+            // Adiciona active class à thumbnail clicada
+            thumbnail.classList.add('active');
+        }
+
+        // Função para controlar quantidade
+        function changeQuantity(delta) {
+            const quantityInput = document.getElementById('quantity');
+            let currentValue = parseInt(quantityInput.value);
+            let newValue = currentValue + delta;
+            
+            if (newValue >= 1 && newValue <= 10) {
+                quantityInput.value = newValue;
+            }
+        }
+
+        // Seleção de tamanho
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Seleção de cor
+        document.querySelectorAll('.color-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
